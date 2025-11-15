@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Cahe-Control" content="no-store">
+    <title>Bienvenido al Sistema de Ventas</title>
+
+    <style>
+        body {
+            background-color: #e3f2fd;
+            text-align: center;
+            font-family: Arial;
+            margin-top: 50px;
+        }
+
+        .contenedor {
+            padding: 30px;
+            background: white;
+            width: 60%;
+            margin: auto;
+            border-radius: 20px;
+            box-shadow: 0 0 15px #90caf9;
+        }
+
+        h1 {
+            color: #0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="contenedor">
+    <h1>Proyecto Prueba</h1>
+    <p>sistema de gestión de tiendas, clientes y compras.</p>
+
+    <img src="/static/img.jpg" 
+         width="250">
+
+    <br><br>
+
+    <audio controls>
+        <source src="{% static 'audio/intro.mp3' %}" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+    <br><br>
+    <a href="{% url 'login' %}">
+        <button>iniciar Sesion</button>
+    </a>
+
+</div>
+
+</body>
+</html>
